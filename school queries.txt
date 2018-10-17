@@ -1,0 +1,7 @@
+SELECT * FROM leerling WHERE medisch is NOT NULL;
+
+SELECT * FROM docenten WHERE salaris >3500;
+
+SELECT * FROM toetsen WHERE cijfer <6;
+
+SELECT docenten.ziektedagen, leerling.ziektedagen FROM docenten INNER JOIN leerling ON docenten.ziektedagen = leerling.ziektedagen;
